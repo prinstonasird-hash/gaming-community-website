@@ -106,3 +106,16 @@ button {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 0 25px rgba(34,197,94,0.35);
 }
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.card span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
