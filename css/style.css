@@ -119,3 +119,43 @@ button {
   font-size: 18px;
   font-weight: bold;
 }
+/* Forums Page */
+
+.forum-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.forum-card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.forum-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(34,197,94,0.3);
+}
+
+.forum-post {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.forum-post h3 {
+  margin-bottom: 5px;
+  color: #22c55e;
+}
+
+.forum-post p {
+  font-size: 14px;
+  color: #9ca3af;
+}
