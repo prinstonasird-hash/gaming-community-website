@@ -191,3 +191,31 @@ button {
     display: flex;
   }
 }
+.clips {
+  padding: 40px;
+  text-align: center;
+}
+
+.clip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.clip-card {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.clip-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.clip-card p {
+  margin-top: 10px;
+  color: #22c55e;
+}
