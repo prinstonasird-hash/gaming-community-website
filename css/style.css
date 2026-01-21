@@ -34,15 +34,31 @@ nav a {
   text-decoration: none;
 }
 
-.hero {
-  min-height: calc(100vh - 70px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
+  <section class="hero">
+  <h2>Where Gamers Unite & Level Up</h2>
+  <p>Find teammates, share clips, and compete in tournaments across top games.</p>
+
+  <div class="hero-buttons">
+    <a href="forums.html" class="btn primary">Find Teammates</a>
+    <a href="clips.html" class="btn secondary">Watch Clips</a>
+  </div>
+</section>
+<section class="features">
+  <div class="feature-card">
+    <h3>🎯 Find Teammates</h3>
+    <p>Search players by game, role, and skill level.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>🎥 Share Clips</h3>
+    <p>Upload your best moments and get featured.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>🏆 Tournaments</h3>
+    <p>Compete in community-hosted tournaments.</p>
+  </div>
+</section>
 
 
 button {
@@ -249,4 +265,155 @@ button {
   border: none;
   cursor: pointer;
   font-weight: bold;
+}
+.player-search {
+  padding: 40px;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #22c55e;
+}
+
+.player-card h3 {
+  color: #22c55e;
+}
+
+.player-card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #22c55e;
+  border: none;
+  cursor: pointer;
+}
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  padding: 40px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: #22c55e;
+  color: black;
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid #22c55e;
+  color: #22c55e;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 60px 10%;
+  background: #020617;
+}
+
+.feature-card {
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+/* HERO BUTTONS */
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background: #22c55e;
+  color: black;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #22c55e;
+  color: #22c55e;
+}
+
+/* FEATURES SECTION */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature-card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
 }
