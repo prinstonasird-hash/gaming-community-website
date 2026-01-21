@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Players | GameSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🔍 Find Players</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="clips.html">Clips</a>
+    <a href="tournaments.html">Tournaments</a>
+  </nav>
+</header>
+
+<section class="player-search">
+  <h2>Find Players to Play With</h2>
+
+  <!-- Filters -->
+  <div class="filters">
+    <select id="gameFilter">
+      <option value="">All Games</option>
+      <option value="Valorant">Valorant</option>
+      <option value="BGMI">BGMI</option>
+      <option value="FIFA">FIFA</option>
+    </select>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by name or role..."
+    >
+  </div>
+
+  <!-- Player List -->
+  <div id="playerList" class="player-grid">
+    <!-- Players injected by JS -->
+  </div>
+</section>
+
+<script src="js/players.js"></script>
+</body>
+</html>
