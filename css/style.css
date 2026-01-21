@@ -52,3 +52,23 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 60px 20px;
+}
+
+.card {
+  background: #020617;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(34,197,94,0.3);
+}
