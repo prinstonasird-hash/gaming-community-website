@@ -417,3 +417,16 @@ button {
 .feature-card:hover {
   transform: translateY(-8px);
 }
+.clips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.clip-card {
+  background: #020617;
+  padding: 15px;
+  border-radius: 14px;
+  text-align: center;
+}
