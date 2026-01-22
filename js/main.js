@@ -16,3 +16,21 @@ function sendMessage() {
   document.getElementById("chatMessages").appendChild(msg);
   input.value = "";
 }
+const filters = document.querySelectorAll(".clip-filter");
+const clips = document.querySelectorAll(".clip-card");
+
+filters.forEach(filter => {
+  filter.addEventListener("click", () => {
+    filters.forEach(btn => btn.classList.remove("active"));
+    filter.classList.add("active");
+
+    const game = filter.dataset.game;
+
+    clips.forEach(clip => {
+      clip.style.display =
+        game === "all" || clip.dataset.game === game
+          ? "block"
+          : "none";
+    });
+  });
+});

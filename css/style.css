@@ -534,3 +534,54 @@ button {
 .leaderboard th {
   color: #22c55e;
 }
+.clip-categories {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.clip-filter {
+  background: #111827;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.clip-filter.active {
+  background: #22c55e;
+  color: #000;
+}
+
+.clips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.clip-card {
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 12px;
+  transition: transform 0.3s ease;
+}
+
+.clip-card:hover {
+  transform: translateY(-5px);
+}
+
+.clip-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.clip-card h4 {
+  margin: 10px 0 5px;
+}
+
+.clip-card p {
+  color: #94a3b8;
+  font-size: 14px;
+}
