@@ -23,7 +23,7 @@
   <!-- Forum Categories -->
   <div class="forum-categories">
     <div class="forum-card">🎯 Strategy & Tips</div>
-    <div class="forum-card">🔥 General Discussion</div>
+    <a href="#general-chat" class="forum-card">🗨️ General Discussion</a>
     <div class="forum-card">🎮 Find Teammates</div>
     <div class="forum-card">🏆 Esports & Tournaments</div>
   </div>
@@ -45,6 +45,20 @@
   <div class="forum-post">
     <h3>Upcoming tournaments this week?</h3>
     <p>Started by Sam • 5 replies</p>
+  </div>
+</section>
+<section class="section" id="general-chat">
+  <h2 class="section-title">🗨️ General Discussion Chat</h2>
+
+  <div class="chat-container">
+    <div class="chat-messages" id="chatMessages">
+      <div class="message other">Welcome to General Discussion 👋</div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
   </div>
 </section>
 
