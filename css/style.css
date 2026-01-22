@@ -514,3 +514,23 @@ button {
 .leaderboard tr:hover {
   background: #1e293b;
 }
+.leaderboard-section {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard th,
+.leaderboard td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #1e293b;
+}
+
+.leaderboard th {
+  color: #22c55e;
+}
