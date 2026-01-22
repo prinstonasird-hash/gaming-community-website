@@ -483,3 +483,34 @@ button {
   border: none;
   cursor: pointer;
 }
+.leaderboard {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #0f172a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.leaderboard th,
+.leaderboard td {
+  padding: 12px;
+  text-align: left;
+}
+
+.leaderboard th {
+  background: #1e293b;
+  color: #22c55e;
+}
+
+.leaderboard tr:nth-child(even) {
+  background: #020617;
+}
+
+.leaderboard tr:hover {
+  background: #1e293b;
+}
