@@ -1,43 +1,55 @@
-<section class="section">
-  <h2 class="section-title">🎬 Top Gaming Clips</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clips | GameSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <!-- Categories -->
-  <div class="clip-categories">
-    <button class="clip-filter active" data-game="all">All</button>
-    <button class="clip-filter" data-game="valorant">Valorant</button>
-    <button class="clip-filter" data-game="bgmi">BGMI</button>
-    <button class="clip-filter" data-game="cs2">CS2</button>
-    <button class="clip-filter" data-game="fifa">FIFA</button>
-    <button class="clip-filter" data-game="fortnite">Fortnite</button>
-    <button class="clip-filter" data-game="apex">Apex Legends</button>
-    <button class="clip-filter" data-game="fortnite">Fortnite</button>
-    <button class="clip-filter" data-game="cod">Call of Duty</button>
+<body>
 
-  </div>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <h1>GameSphere</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="forums.html">Forums</a>
+      <a href="clips.html">Clips</a>
+      <a href="tournaments.html">Tournaments</a>
+    </nav>
+  </header>
 
-  <!-- Clips Grid -->
-  <div class="clips-grid">
-    <div class="clip-card" data-game="valorant">
-      <video src="assets/clips/valorant1.mp4" controls></video>
-      <h4>Insane Ace 🔥</h4>
-      <p>By Phoenix</p>
+  <!-- CLIPS CONTENT -->
+  <section class="section">
+    <h2 class="section-title">🎮 Top Gaming Clips</h2>
+
+    <div class="clips-grid">
+      <div class="clip-card">
+        <video controls>
+          <source src="assets/clips/clip1.mp4" type="video/mp4">
+        </video>
+        <p>Crazy Squad Wipe 🔥</p>
+      </div>
+
+      <div class="clip-card">
+        <video controls>
+          <source src="assets/clips/clip2.mp4" type="video/mp4">
+        </video>
+        <p>Insane Ace 😱</p>
+      </div>
+
+      <div class="clip-card">
+        <video controls>
+          <source src="assets/clips/clip3.mp4" type="video/mp4">
+        </video>
+        <p>Valorant Clutch 💥</p>
+      </div>
     </div>
-<div class="clip-card" data-game="apex">
-  <video src="assets/clips/apex1.mp4" controls></video>
-  <h4>Crazy Squad Wipe 🔥</h4>
-  <p>By Razor</p>
-</div>
+  </section>
 
-    <div class="clip-card" data-game="bgmi">
-      <video src="assets/clips/bgmi1.mp4" controls></video>
-      <h4>1v4 Clutch</h4>
-      <p>By ShadowX</p>
-    </div>
+  <footer>
+    <p>Play Together. Grow Together.</p>
+  </footer>
 
-    <div class="clip-card" data-game="cs2">
-      <video src="assets/clips/cs21.mp4" controls></video>
-      <h4>Perfect Headshots</h4>
-      <p>By Alpha</p>
-    </div>
-  </div>
-</section>
+</body>
+</html>
