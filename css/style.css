@@ -222,3 +222,89 @@ footer {
   font-size: 12px;
   color: #94a3b8;
 }
+/* =========================
+   CHAT PAGE (PRO UI)
+========================= */
+
+.chat-header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #1f3cff;
+}
+
+.chat-header h1 {
+  color: #4da6ff;
+  margin-bottom: 5px;
+}
+
+.chat-header p {
+  color: #9bbcff;
+  font-size: 14px;
+}
+
+.chat-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #0b1220;
+  border: 1px solid #1f3cff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Chat bubble */
+.chat-message {
+  max-width: 70%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1f3cff, #4da6ff);
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(77,166,255,0.3);
+}
+
+/* Input area */
+.chat-input-area {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  border-top: 1px solid #1f3cff;
+}
+
+.chat-input-area input {
+  flex: 1;
+  background: #020617;
+  border: 1px solid #1f3cff;
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.chat-input-area input::placeholder {
+  color: #7aa2ff;
+}
+
+.chat-input-area button {
+  background: linear-gradient(135deg, #1f3cff, #4da6ff);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-input-area button:hover {
+  opacity: 0.9;
+}

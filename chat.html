@@ -5,71 +5,41 @@
   <title>Community Chat | GameSphere</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- Firebase SDKs -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
-<!-- Your JS -->
-<script src="js/main.js"></script>
+<body class="chat-page">
 
-<body>
-
-<header class="navbar">
-  <div class="logo">🎮 GameSphere</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="forums.html">Forums</a>
-    <a href="clips.html">Clips</a>
-    <a href="tournaments.html">Tournaments</a>
-    <a href="chat.html" class="active">💬</a>
-  </nav>
-</header>
-
-<section class="section chat-section">
-  
-
-  <section class="chat-page">
-
-  <div class="chat-header">
-    <h2>💬 Community Discussion</h2>
+  <!-- Header -->
+  <header class="chat-header">
+    <h1>💬 Community Discussion</h1>
     <p>Talk with gamers, find teammates & plan tournaments</p>
-  </div>
+  </header>
 
-  <div class="chat-container">
+  <!-- Chat Container -->
+  <main class="chat-container">
 
-    <div class="chat-messages">
-
-      <div class="message">
-        <span class="username">Ace</span>
-        <p>Anyone up for Valorant ranked?</p>
-      </div>
-
-      <div class="message">
-        <span class="username">ShadowX</span>
-        <p>Looking for BGMI squad 🔥</p>
-      </div>
-
-      <div class="message">
-        <span class="username">Phoenix</span>
-        <p>Tournament this weekend?</p>
-      </div>
-
+    <!-- Messages -->
+    <div id="chat-messages" class="chat-messages">
+      <!-- Messages appear here -->
     </div>
 
+    <!-- Input -->
     <div class="chat-input-area">
-      <input type="text" placeholder="Type your message..." disabled>
-      <button disabled>Send</button>
+      <input
+        id="chat-input"
+        type="text"
+        placeholder="Type your message..."
+      />
+      <button id="send-btn">Send</button>
     </div>
 
-  </div>
+  </main>
 
-  <p class="chat-info">🔒 Live chat coming soon (backend required)</p>
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
-</section>
-
-<footer>
-  <p>GameSphere Community Chat</p>
-</footer>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
 
 </body>
 </html>
