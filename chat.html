@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Community Chat | GameSphere</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="chat-page">
+<body>
 
-  <!-- Header -->
-  <header class="chat-header">
-    <h1>💬 Community Discussion</h1>
-    <p>Talk with gamers, find teammates & plan tournaments</p>
-  </header>
+<!-- 🔵 NAVBAR (FIXES MISSING HOME / TOURNAMENT / FORUM) -->
+<header class="navbar">
+  <div class="logo">🎮 GameSphere</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="forums.html">Forums</a>
+    <a href="tournaments.html">Tournaments</a>
+    <a href="clips.html">Clips</a>
+    <a href="chat.html" class="active">💬 Chat</a>
+  </nav>
+</header>
 
-  <!-- Chat Container -->
-  <main class="chat-container">
+<!-- 🔵 CHAT HEADER -->
+<section class="chat-header">
+  <h1>💬 Community Discussion</h1>
+  <p>Talk with gamers, find teammates & plan tournaments</p>
+</section>
 
-    <!-- Messages -->
-    <div id="chat-messages" class="chat-messages">
-      <!-- Messages appear here -->
-    </div>
+<!-- 🔵 CHAT BOX -->
+<main class="chat-container">
+  <div id="chat-messages" class="chat-messages"></div>
 
-    <!-- Input -->
-    <div class="chat-input-area">
-      <input
-        id="chat-input"
-        type="text"
-        placeholder="Type your message..."
-      />
-      <button id="send-btn">Send</button>
-    </div>
+  <div class="chat-input-area">
+    <input
+      id="chat-input"
+      type="text"
+      placeholder="Type your message..."
+    />
+    <button id="send-btn">Send</button>
+  </div>
+</main>
 
-  </main>
+<!-- 🔥 FIREBASE (ORDER MATTERS) -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-
-  <!-- Main JS -->
-  <script src="js/main.js"></script>
+<!-- YOUR JS -->
+<script src="js/main.js"></script>
 
 </body>
 </html>
